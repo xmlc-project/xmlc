@@ -1,0 +1,16 @@
+<app>
+    <text>Welcome to XMLC Python Console</text>
+
+    <input prompt="What's your name?" var="username" />
+
+    <python>
+self.variables["username"] = self.username.upper()
+print("Hello quan " + self.variables["username"] + "! (from Python)")
+    </python>
+
+    <menu title="Main Menu">
+        <option label="Say Goodbye">
+            <text>Goodbye from XMLC!</text>
+        </option>
+    </menu>
+</app>
